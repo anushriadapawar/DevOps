@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Lifestyle App - Bookings</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">🌍 TravelLife</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="bookings.html">Bookings</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Manage Your Bookings</h1>
+      <p>View your existing bookings and create new ones for your dream destinations.</p>
+    </section>
+    <section>
+      <h2>Create a New Booking</h2>
+      <form id="booking-form">
+        <label for="customer-name">Your Name:</label>
+        <input type="text" id="customer-name" required>
+        <label for="location-id">Location ID:</label>
+        <input type="number" id="location-id" required>
+        <label for="booking-date">Booking Date:</label>
+        <input type="date" id="booking-date" required>
+        <button type="submit">Create Booking</button>
+      </form>
+    </section>
+    <section>
+      <h2>Your Bookings</h2>
+      <div id="bookings-list">
+        <p>Loading bookings...</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Travel Lifestyle App. All rights reserved.</p>
+  </footer>
+  <script src="js/bookings.js"></script>
+</body>
+</html>
